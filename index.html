@@ -1,103 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeCrafters | Dashboard</title>
-    <link rel="stylesheet" href="styles/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CodeCrafters | Dashboard</title>
+<link rel="stylesheet" href="styles/style.css">
 </head>
 
-<body>
-    <!-- Header Section -->
-    <header>
-        <h1>CodeCrafters</h1>
-        <p>A squad of curious minds building clean, creative, and scalable web experiences.</p>
-    </header>
+<body class="dashboard">
 
-    <section>
-        <h2>Welcome Section</h2>
-        <p>
-            <b>Welcome to CodeCrafters</b>
-        </p>
-        <p>
-            We are a passionate squad of frontend learners who love turning ideas into interactive web pages. Together, we explore modern web technologies, collaborate on projects, and sharpen our development skills.
-        </p>
-    </section>
+<header>
+<h1>CodeCrafters</h1>
+<p>A squad of curious minds building clean, creative, and scalable web experiences.</p>
+</header>
 
-    
-    <section>
-        <h2>Squad info</h2>
-        <p>
-            CodeCrafters is a team of 6 aspiring frontend developers focused on learning by building.Our strengths lie in teamwork, consistency, and problem-solving using HTML, CSS, JavaScript, and Git.
-        </p>
-    </section>
+<div class="container">
 
-    <section>
-        <img src="images/team.jpg" alt="CodeCrafters Squad Photo" width="600" height="400">
-    </section>
+<section class="welcome">
+<h2>Welcome</h2>
+<p><strong>Welcome to CodeCrafters</strong></p>
+<p>
+We are a passionate squad of frontend learners who love turning ideas into interactive web pages.
+Together, we explore modern web technologies, collaborate on projects, and sharpen our development skills.
+</p>
+</section>
 
+<section>
+<h2>Squad Info</h2>
+<p>
+CodeCrafters is a team of aspiring frontend developers focused on learning by building.
+Our strengths lie in teamwork, consistency, and problem-solving using HTML, CSS, JavaScript, and Git.
+</p>
+<img src="images/team.jpg" alt="CodeCrafters Squad Photo" class="team-img">
+</section>
 
-        <!-- Projects Section -->
-        <section id="projects">
-            <h2>Projects in progress</h2>
-            <table>
-                <tr>
-                    <th>Project Name</th>
-                    <th>Status</th>
-                    <th>Tech Stack</th>
-                </tr>
-                <tr>
-                    <td>Portfolio Website</td>
-                    <td>In Progress</td>
-                    <td>HTML, CSS, JavaScript</td>
-                </tr>
-                <tr>
-                    <td>Task Manager App</td>
-                    <td>Planned</td>
-                    <td>HTML, CSS, JavaScript</td>
-                </tr>
-                <tr>
-                    <td>Blog Platform</td>
-                    <td>Planned</td>
-                    <td>HTML, CSS, JavaScript</td>
-                </tr>
-            </table>
-        </section>
+<section id="projects">
+<h2>Projects in Progress</h2>
 
-        <!-- Members Section -->
-        <section id="members">
-            <h2>Meet the Squad</h2>
-            <ul>
-                <li><a href="members/rohith.html">Rohith - Squad Lead</a></li>
-                <li><a href="members/ananya.html">Ananya - UI / UX Designer</a></li>
-                <li><a href="members/vikram.html">Vikram - Frontend Developer</a></li>
-            </ul>
-        </section>
+<table>
+<tr>
+<th>Project Name</th>
+<th>Status</th>
+<th>Tech Stack</th>
+</tr>
 
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Get in touch with our team</p>
+<tr>
+<td>Portfolio Website</td>
+<td>In Progress</td>
+<td>HTML, CSS</td>
+</tr>
 
-            <form>
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required><br>
+<tr>
+<td>Task Manager App</td>
+<td>Planned</td>
+<td>HTML, CSS, JavaScript</td>
+</tr>
 
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br>
+<tr>
+<td>Blog Platform</td>
+<td>Planned</td>
+<td>HTML, CSS, JavaScript</td>
+</tr>
 
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" required></textarea><br>
+</table>
+</section>
 
-                <input type="submit" value="Submit">
-            </form>
-        </section>
-    </main>
+<section id="members">
+<h2>Meet the Squad</h2>
 
-    <!-- Footer -->
-    <footer>
-        <p>Built with 💙 by CodeCrafters | Phase 1</p>
-    </footer>
+<ul class="members-list">
+<li><a href="members/rohith.html">Rohith — Squad Lead</a></li>
+<li><a href="members/ananya.html">Ananya — UI / UX Designer</a></li>
+<li><a href="members/vikram.html">Vikram — Frontend Developer</a></li>
+</ul>
+
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+
+<form>
+
+<label for="name">Name</label>
+<input type="text" id="name" required>
+
+<label for="email">Email</label>
+<input type="email" id="email" required>
+
+<label for="message">Message</label>
+<textarea id="message" rows="4" required></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+</section>
+
+</div>
+
+<footer>
+<p>Built with 💙 by CodeCrafters | Phase 2</p>
+</footer>
+
 </body>
 </html>
-
